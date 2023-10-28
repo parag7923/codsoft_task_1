@@ -1,0 +1,277 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7a7a7a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header*/
+header {
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 30px;
+     margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation*/
+nav {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 19%;
+}
+
+nav h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 3px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Intro */
+.intro {
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.intro h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* About */
+#about {
+    background-color: #000000;
+    margin-top: -40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.about-text {
+    flex: 1;
+    padding:10px;
+}
+
+/* About text */
+
+.about-text img {
+border-radius: 50%;
+overflow: hidden;
+
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+ }
+
+ .about-text img  {
+    width: 170px;
+    height: 170px; 
+    object-fit:fill;
+    
+    background-position: 90px;
+}
+ .about-text p {
+     font-size: 18px;
+     text-align: center;
+     line-height: 1.6;
+     margin-top: 15px;
+}
+
+ /* Resume */
+
+#resume {
+    background-color: a7a7;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition:transform 0.4s;
+}
+
+#resume a:hover {
+     background-color: #18a3ff;
+     transform: scale(1.2);
+}
+
+/* Skills */
+
+#skills {
+     background-color:#000000 ;
+     padding-top: 20px;
+     padding-bottom: 30px;
+     margin: 20px;
+     text-align: center;
+}
+
+#skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+ #skills li {
+    flex: 1;
+    font-size: 18px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #555552;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* skills styles */
+.my-list-item {
+    list-style: none;
+    border-radius: 8%;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+    position: relative; 
+}
+
+.hidden-section{
+   padding-top: 20px;
+   
+}
+/*  hidden section */
+.my-list-item .hidden-section {
+    display: none; 
+    position: absolute;
+    border-radius: 8%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6d6969; 
+    z-index: 1; 
+}
+
+
+.my-list-item:hover {
+    transform: scale(1.1); 
+}
+
+
+.my-list-item:hover .hidden-section {
+    display: block;
+}
+
+
+/* Projects */
+#projects {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.proj{
+   justify-content: center;
+}
+
+.project {
+    border: #141414 solid;
+    background-color:  #7a7a7a;
+    margin: 40px;
+}
+
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.project img {
+    width: 430px;
+    height: 240px;
+    padding: 10px ;
+    margin: 10px ;
+    background-color: #ffffff;
+    border: #333 solid 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+#contact {
+    background-color:  #7a7a7a;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
